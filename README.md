@@ -1,3 +1,8 @@
+# yt2obisdian
+
+The original chrome plugin fails to work in some instances with other plugins(such as FDM).
+I created this greasemonkey script that effectively does the same and more. It pops up a dialog when clicking the save to obsidian button which one can enter in a description and also include the transcript.
+
 # YouTube to Obsidian
 
 A Chrome extension that automatically saves YouTube videos as markdown notes directly to your Obsidian vault. Perfect for anyone who wants to organize YouTube content in their knowledge management system.
@@ -13,9 +18,11 @@ A Chrome extension that automatically saves YouTube videos as markdown notes dir
 ## 🛠 Installation
 
 ### Method 1: Chrome Web Store (Coming Soon)
-*(Will be available once published)*
+
+_(Will be available once published)_
 
 ### Method 2: Manual Installation
+
 1. Download or clone this repository
 2. Open Chrome and navigate to `chrome://extensions/`
 3. Enable "Developer mode" in the top-right corner
@@ -25,18 +32,21 @@ A Chrome extension that automatically saves YouTube videos as markdown notes dir
 ## 📖 How to Use
 
 ### Basic Usage:
+
 1. **Navigate to any YouTube video**
 2. **Click the extension icon** in Chrome's toolbar
-4. **Click "Save Video to Obsidian"**
-5. **Check your Obsidian vault** - the markdown file will be saved in your specified folder
+3. **Click "Save Video to Obsidian"**
+4. **Check your Obsidian vault** - the markdown file will be saved in your specified folder
 
 ### Setting Up Your Vault Path:
+
 1. Click the extension icon
 2. Click "Settings"
 3. Enter the relative path where you want files saved (e.g., `YouTube/Videos`)
 4. Click "Save Settings"
 
 ### Example Output:
+
 The extension creates markdown files with this structure:
 
 ```markdown
@@ -59,13 +69,16 @@ tags: ["youtube", "video", "your-custom-tags"]
 **Tags:** youtube, video
 
 ## Description
+
 Video description goes here...
 
 ## Notes
+
 <!-- Add your personal notes here -->
 
 ---
-*Saved with YouTube to Obsidian extension*
+
+_Saved with YouTube to Obsidian extension_
 ```
 
 ## 🤝 Contributing
@@ -73,6 +86,7 @@ Video description goes here...
 We welcome contributions! Here's how you can help:
 
 ### Development Setup:
+
 1. Fork the repository
 2. Clone your fork locally
 3. Load the extension in Chrome as described in Installation
@@ -81,6 +95,7 @@ We welcome contributions! Here's how you can help:
 6. Submit a pull request
 
 ### Areas for Contribution:
+
 - **Bug fixes**: Report or fix any issues you encounter
 - **New features**: Check our TODO list below for planned features
 - **UI improvements**: Enhance the popup or options page design
@@ -88,6 +103,7 @@ We welcome contributions! Here's how you can help:
 - **Browser compatibility**: Help make it work with other Chromium browsers
 
 ### Code Structure:
+
 ```
 src/
 ├── manifest.json          # Extension configuration
@@ -104,6 +120,7 @@ src/
 ```
 
 ### Pull Request Guidelines:
+
 - Follow the existing code style
 - Add comments for complex logic
 - Test your changes on multiple YouTube pages
@@ -113,6 +130,7 @@ src/
 ## 🐛 Reporting Issues
 
 Found a bug? Please create an issue with:
+
 1. **Description** of the problem
 2. **Steps to reproduce**
 3. **Expected behavior**
@@ -122,6 +140,7 @@ Found a bug? Please create an issue with:
 ## 📋 TODO List
 
 ### High Priority
+
 - [ ] **Add manual tags in popup**
   - [ ] Tags input field in popup
   - [ ] Comma-separated tag parsing
@@ -138,6 +157,7 @@ Found a bug? Please create an issue with:
   - [ ] Date formatting options in settings
 
 ### Medium Priority
+
 - [ ] **Transcript extraction**
   - [ ] Automatic transcript scraping when available
   - [ ] Transcript formatting options
@@ -156,6 +176,7 @@ Found a bug? Please create an issue with:
   - [ ] Progress indicators for bulk operations
 
 ### Low Priority
+
 - [ ] **Keyboard shortcuts**
   - [ ] Quick save shortcut
   - [ ] Shortcut to open popup
@@ -174,6 +195,7 @@ Found a bug? Please create an issue with:
 ## 🛡 Privacy
 
 This extension:
+
 - ✅ Runs entirely locally on your device
 - ✅ Does not collect any personal data
 - ✅ Does not send data to external servers

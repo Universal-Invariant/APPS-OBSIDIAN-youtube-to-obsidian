@@ -63,6 +63,10 @@ ${videoData.description}
             // Create a data URL instead of using createObjectURL
             const dataUrl = 'data:text/markdown;charset=utf-8,' + encodeURIComponent(markdown);
             
+			// Bug in filenames: https://issues.chromium.org/issues/40453079
+			// In my case, disabling FreeDownloadManager allows the filename to pass through
+			
+			
             // Use downloads API with data URL
             await chrome.downloads.download({
                 url: dataUrl,
